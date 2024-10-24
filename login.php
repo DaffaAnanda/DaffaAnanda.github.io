@@ -8,7 +8,7 @@ if (isset($_POST['email']) || isset($_POST['password'])) {
     // Perbandingan menggunakan operator '==' untuk memeriksa apakah email dan password sesuai
     if ($email == 'admin@admin.com' && $password == 'admin') {
         // Mengarahkan pengguna ke dashboard jika email dan password benar
-        header('Location: ./../dashboard.php');
+        header('Location: ./../company-profile.html');
         exit(); // Tambahkan exit untuk menghentikan eksekusi setelah redirect
     } else {
         // Menampilkan pesan kesalahan jika email atau password salah
